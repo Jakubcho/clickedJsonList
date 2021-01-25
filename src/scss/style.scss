@@ -1,0 +1,35 @@
+*{	box-sizing: border-box;
+	font-size:24px;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items:flex-start;
+}
+.task-item + ul {
+	visibility: hidden;
+	height: 0;
+	opacity: 0;
+}
+.showCheckbox + ul {
+	visibility: visible;
+	opacity: 1;
+	height: auto;
+	transition: opacity 2s linear;
+}
+.fa {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	color: blue;
+}
+.fa-circle {
+	padding-top: 5px;
+	font-size:15px;
+}
+li {
+	padding-left:10px;
+}
+li:nth-child(odd) {
+	background-color: rgba(32, 32, 26, 0.11);
+}
